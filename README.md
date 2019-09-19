@@ -40,7 +40,7 @@ Software developers writing in any programming languages.
 
 ## Application Areas
 
-Writing to and reading from files.
+Writing to and reading from files, especially shared ones.
 
 ## Scope of this Document
 
