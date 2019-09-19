@@ -70,7 +70,7 @@ some_command_from_library_B
 
 In the code above we see that there are two pieces added by different parties: libraries A and B.
 
-While it is trivial to write to the file, it is not so when editing or removing previously written data is required. Usually developers go with wrapping data with identifying blocks and using regex solution:
+While it is trivial to write to the file, it is not so when editing or removing the data is required. Usually developers go with wrapping data with identifying blocks and using regex solution:
 
 ```shell
 # .git/hooks/pre-commit
@@ -84,12 +84,12 @@ some_command_from_library_B
 #B_end
 ```
 
-The libraries A and B can, with the help of regular expressions, find their data, and remove it. You can see, that there is no consistency in style. However, is it only matter of style/aesthetics? Doesn't seem so. The above example makes it hard to do the following:
+The libraries A and B can, with the help of regular expressions, find their data, and remove it. You can see, that there is no consistency in style. However, it is only matter of style/aesthetics, right? Doesn't seem so. The above example makes it hard to do the following:
 
 * Removing data. Other than having to use regular expressions, there is a theoretical possibility of removing excessive parts of the file if one of two things happens: either the developer used non-unique wrapping identifiers, or his regex was not made correctly. The developer has to spend his time to think about these cases to prevent them, which means, not only more precious time is spent, but also, the human factor is still there.
 * Get all parties, who inserted their code, find out if a competing/collaborating library's code already presented in the file.
 * Sort code blocks of different parties (sometimes, in rare cases, may appear to be a useful feature).
-* Probably most important, navigating the file. It is absolutely possible to navigate directories. This is probably one of the earliest feature available in programming history. There are plenty of ways to do that, in any language. However, files can still become very big, containing many discrete concerns. Yet there is no way to get a structured representation of a file. Files and directories are only concepts, they both contain bits of data, and having the last and the main data container (a file) unstructured seems not right.
+* Probably most important, navigating the file. It is absolutely possible to navigate directories. This is probably one of the earliest feature available in programming history. There are plenty of ways to do that, in any language. However, files can still become very big, containing many discrete concerns. Yet there is no way to get a structured representation of a file. Files and directories are only data structure concepts, they both contain bits of data, and having the last and the main data container (a file) unstructured seems not right.
 
 ## The Solution
 
