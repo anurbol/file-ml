@@ -282,7 +282,7 @@ Syntax, implementations (parsers, lexers, interpreters), style should follow tho
 
 **HTML** is used heavily for layouting and styling information, hence it has many tags for layouting (`<header>`, `<ul>`, `<p>`) and visually decorating it (`<strong>`, `<small>`).
 
-**File ML** hardly can be imagined to be used for the same purpose. Instead, it can be used to semantically (not visually) structure information (the `<section>` tag is good for it). If you are doubting what does it mean to "structure" information, you can think of it as splitting monolithic, multi-concern text (code) to smaller parts that have their own, focused concern.
+**File ML** hardly can be imagined to be used for the same purpose. Instead, it can be used to semantically (not visually) structure information (the `<section>` tag is good for it). If you are doubting what does it mean to "structure" information, you can think of it as splitting monolithic, multi-concern text (or code!) to smaller parts that have their own, focused concern.
 
 ### Similar: used to manipulate elements
 
