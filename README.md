@@ -14,9 +14,9 @@ HTML inside comments of *any* files. Enables:
 
 ```js
 // file.js
-// <comment-out when="in_production">
+// <remove when="in_production">
 console.log(healthStatus, loadTime)
-// </comment-out>
+// </remove>
 ```
 
 ```bash
